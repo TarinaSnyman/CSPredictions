@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+        body {
+            margin: 0;
+            font-family: 'Orbitron', sans-serif;
+            background-color: #0e0e0e;
+            color: #f0f0f0;
+        }
+
+        header {
+            background-color: #1a1a1a;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid #facc15;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            color: #facc15;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        nav ul li {
+            cursor: pointer;
+            color: #f0f0f0;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li:hover {
+            color: #facc15;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .About {
+            background-color: #1f1f1f;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-left: 5px solid #facc15;
+            border-radius: 8px;
+            min-height: 100px;
+        }
+
+        .links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .links a {
+            background-color: #262626;
+            color: #f0f0f0;
+            padding: 15px 25px;
+            text-decoration: none;
+            border: 2px solid #facc15;
+            border-radius: 8px;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .links a:hover {
+            background-color: #facc15;
+            color: #000;
+            transform: scale(1.05);
+        }
+
+        footer {
+            margin-top: 50px;
+            padding: 20px;
+            text-align: center;
+            background-color: #1a1a1a;
+            border-top: 2px solid #facc15;
+        }
+
+        footer a {
+            color: #facc15;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .links {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
